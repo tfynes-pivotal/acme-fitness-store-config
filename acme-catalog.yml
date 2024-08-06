@@ -24,18 +24,18 @@ management:
 eureka:
   client:
     enabled: true
----
-spring:
-  config:
-    activate:
-      on-profile: key-vault
-  datasource:
-    url: jdbc:postgresql://${POSTGRES-SERVER-NAME}:5432/${CATALOG-DATABASE-NAME}?sslmode=require
-    username: ${POSTGRES-LOGIN-NAME}
-    password: ${POSTGRES-LOGIN-PASSWORD}
-  cloud:
-    azure:
-      keyvault:
-        secret:
-          enabled: true
-          property-source-enabled: true
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: key-vault
+#  datasource:
+#    url: jdbc:postgresql://${POSTGRES-SERVER-NAME}:5432/${CATALOG-DATABASE-NAME}?sslmode=require
+#    username: ${POSTGRES-LOGIN-NAME}
+#    password: ${POSTGRES-LOGIN-PASSWORD}
+#  cloud:
+#    azure:
+#      keyvault:
+#        secret:
+#          enabled: true
+#          property-source-enabled: true
